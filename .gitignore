@@ -1,0 +1,13 @@
+# twilio test credential config
+test_credential_config.json
+
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
