@@ -7,9 +7,11 @@ const client = require("twilio")(
 
 client.messages
   .list()
-  .then((messages) =>
-    messages.map((msg) =>
-      console.log(`from : ${msg.from} , to : ${msg.to} , body : ${msg.body}`)
-    )
-  )
+  .then((messages) => {
+    console.log(`total messages : ${messages.length}\n`);
+
+    messages.map((msg) => {
+      console.log(`from : ${msg.from} , to : ${msg.to} , body : ${msg.body}`);
+    });
+  })
   .catch((err) => console.log(err));

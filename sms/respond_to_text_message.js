@@ -6,7 +6,16 @@ const MessagingResponse = require("twilio").twiml.MessagingResponse;
 const express = require('express');
 const app = express();
 
+// used for json inside body 
+//app.use(express.json());
+
+const bodyParser = require('body-parser');
+app.use(bodyParser.urlencoded({extended:false}))
+
 app.post("/sms", (req, res) => {
+  // -- body has info like : From , To , message body , ...
+  console.log(req.body)
+
   const twiml = new MessagingResponse();
 
   twiml.message("The Robots are coming! Head for the hills!");
