@@ -9,7 +9,9 @@ console.log("NOTICE : using non free twilio number cost MONEY !!!");
 
 client.calls
   .create({
-    url: "http://demo.twilio.com/docs/voice.xml",
+    // url: "http://demo.twilio.com/docs/voice.xml",
+    // -- following is implemented using twilio assets
+    url : "https://wine-hedgehog-8979.twil.io/assets/marketing-25-05-20.xml",
     to: "972542220073",
     from: process.env.TWILIO_PHONE_NUMBER,
   })
