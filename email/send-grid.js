@@ -9,7 +9,7 @@ const msg = {
   to: "theyallabeitar1@gmail.com",
   subject: "sendGrid test !!!! ",
   // text : "this is the text",
-  html: "<h2>You can also send html</h2>",
+  html: "<h2 style='color:red;'>You can also send html</h2>",
 };
 
 mailer
