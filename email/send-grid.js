@@ -8,8 +8,8 @@ const msg = {
   // --- the email will be sent to span if from and to are equal
   to: "theyallabeitar1@gmail.com",
   subject: "sendGrid test !!!! ",
-  // text : "this is the text",
-  html: "<h2 style='color:red;'>You can also send html</h2>",
+  text: "this is the text\nthis is new line",
+  // html: "<h2 style='color:red;'>You can also send html</h2>",
 };
 
 mailer
