@@ -14,7 +14,7 @@ https://lodigital.org/
 !!! ההרשמה עומדת להסגר.
 !!! ניתן ליצור איתי קשר במידה ושינוי עתידך והשתלבות בעולם ההי-טק מענינת אותך.
 נתן קרסני
-0542220073
+${process.env.NATHAN_PHONE_NUMBER}
 www.nathankrasney.com
 `
 
@@ -22,7 +22,7 @@ client.messages
   .create({
     body: body,
     from: process.env.TWILIO_PHONE_NUMBER,
-    to: "0542220073"
+    to: process.env.NATHAN_PHONE_NUMBER
   })
   .then((message) => console.log(message))
   .catch((err) => console.log(err));

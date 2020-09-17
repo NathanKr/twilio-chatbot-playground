@@ -12,7 +12,7 @@ client.calls
     // url: "http://demo.twilio.com/docs/voice.xml",
     // -- following is implemented using twilio assets
     url : "https://wine-hedgehog-8979.twil.io/assets/marketing-25-05-20.xml",
-    to: "972542220073",
+    to: process.env.NATHAN_PHONE_NUMBER,
     from: process.env.TWILIO_PHONE_NUMBER,
   })
   .then((call) => console.log(call))
